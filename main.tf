@@ -18,6 +18,6 @@ module "resource_group_storage" {
   resource_group_name              = "my-resource-group"
   location                         = "East US"
   storage_account_name             = "mystorageacc0123"
-  storage_account_tier             = "Standard"
-  storage_account_replication_type = "LRS"
+  storage_account_tier             = var.storage_account_tier
+  storage_account_replication_type = var.storage_account_replication_type
 }
